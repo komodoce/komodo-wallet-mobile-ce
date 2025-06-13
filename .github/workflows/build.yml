@@ -7,7 +7,7 @@ on:
 jobs:
   build-android:
     name: Build Android APK
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       # Common setup
       # TODO: Remove workaround at some future point
