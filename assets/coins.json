@@ -1818,6 +1818,31 @@
     "derivation_path": "m/44'/60'"
   },
   {
+    "coin": "JKC",
+    "name": "junkcoin",
+    "fname": "JunkCoin",
+    "sign_message_prefix": "JunkCoin Signed Message:\n",
+    "rpcport": 9771,
+    "pubtype": 16,
+    "p2shtype": 5,
+    "wiftype": 144,
+    "decimals": 8,
+    "txfee": 100000,
+    "dust": 100000,
+    "mm2": 1,
+    "required_confirmations": 3,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "mature_confirmations": 70,
+    "derivation_path": "m/44'/2013'",
+    "links": {
+      "github": "https://github.com/Junkcoin-Foundation/junkcoin-core",
+      "homepage": "https://junk-coin.com"
+    }
+  },
+  {
     "coin": "MAZE-SLP",
     "fname": "Maze",
     "protocol": {
@@ -2463,7 +2488,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/0'",
+    "derivation_path": "m/84'/0'",
     "trezor_coin": "Bitcoin",
     "links": {
       "github": "https://github.com/bitcoin/bitcoin",
@@ -2724,7 +2749,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/160'",
+    "derivation_path": "m/84'/160'",
     "trezor_coin": "Bitcore",
     "links": {
       "github": "https://github.com/LIMXTEC/BitCore",
@@ -3007,7 +3032,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/34'"
+    "derivation_path": "m/84'/34'"
   },
   {
     "coin": "CDS-PLG20",
@@ -3832,7 +3857,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/802'",
+    "derivation_path": "m/84'/802'",
     "links": {
       "github": "https://github.com/cyberyen/cyberyen",
       "homepage": "https://cyberyen.org"
@@ -4152,7 +4177,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/20'",
+    "derivation_path": "m/84'/20'",
     "trezor_coin": "DigiByte",
     "links": {
       "github": "https://github.com/digibyte/digibyte",
@@ -4356,6 +4381,48 @@
       }
     },
     "derivation_path": "m/44'/2301'"
+  },
+  {
+    "coin": "DINGO",
+    "name": "dingocoin",
+    "fname": "Dingocoin",
+    "sign_message_prefix": "Dingocoin Signed Message:\n",
+    "rpcport": 34646,
+    "pubtype": 30,
+    "p2shtype": 22,
+    "wiftype": 158,
+    "txfee": 100000000,
+    "dingo_fee": true,
+    "dust": 100000000,
+    "mm2": 1,
+    "required_confirmations": 5,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/3'",
+    "links": {
+      "github": "https://github.com/dingocoin/dingocoin",
+      "homepage": "https://dingocoin.com"
+    }
+  },
+  {
+    "coin": "DINGO-BEP20",
+    "name": "dingo_bep20",
+    "fname": "Dingocoin",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 56,
+    "decimals": 8,
+    "avg_blocktime": 3,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "BNB",
+        "contract_address": "0x9b208b117B2C4F76C1534B6f006b033220a681A4"
+      }
+    }
   },
   {
     "coin": "DODO-ARB20",
@@ -5534,7 +5601,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/75'",
+    "derivation_path": "m/84'/75'",
     "trezor_coin": "Fujicoin",
     "links": {
       "github": "https://github.com/fujicoin/fujicoin",
@@ -5717,7 +5784,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/8'",
+    "derivation_path": "m/84'/8'",
     "trezor_coin": "Feathercoin",
     "links": {
       "github": "https://github.com/FeatherCoin/Feathercoin",
@@ -8024,6 +8091,91 @@
     }
   },
   {
+    "coin": "KCN",
+    "name": "kylacoin",
+    "fname": "Kylacoin",
+    "rpcport": 5110,
+    "pubtype": 28,
+    "p2shtype": 26,
+    "wiftype": 65,
+    "segwit": true,
+    "bech32_hrp": "kc",
+    "txfee": 1000,
+    "decimals": 12,
+    "mm2": 1,
+    "wallet_only": true,
+    "sign_message_prefix": "Kylacoin Signed Message:\n",
+    "required_confirmations": 10,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/0'",
+    "trezor_coin": "Kylacoin",
+    "links": {
+      "github": "https://github.com/kylacoin/kylacoin",
+      "homepage": "https://kylacoin.com"
+    }
+  },
+  {
+    "coin": "KCN-segwit",
+    "name": "kylacoin",
+    "fname": "Kylacoin",
+    "sign_message_prefix": "Kylacoin Signed Message:\n",
+    "rpcport": 5110,
+    "pubtype": 28,
+    "p2shtype": 26,
+    "wiftype": 65,
+    "segwit": true,
+    "bech32_hrp": "kc",
+    "address_format": {
+      "format": "segwit"
+    },
+    "orderbook_ticker": "KCN",
+    "txfee": 1000,
+    "decimals": 12,
+    "mm2": 1,
+    "wallet_only": true,
+    "required_confirmations": 10,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/84'/0'",
+    "trezor_coin": "Kylacoin",
+    "links": {
+      "github": "https://github.com/kylacoin/kylacoin",
+      "homepage": "https://kylacoin.com"
+    }
+  },
+  {
+    "coin": "KCN-BEP20",
+    "name": "kcn_bep20",
+    "fname": "Kylacoin",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 56,
+    "decimals": 12,
+    "avg_blocktime": 3,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "BNB",
+        "contract_address": "0x848B991fb420Cd59C8296143c8153477393ddcab"
+      }
+    },
+    "derivation_path": "m/44'/60'",
+    "use_access_list": true,
+    "max_eth_tx_type": 2,
+    "gas_limit": {
+        "eth_send_erc20": 55000,
+        "erc20_payment": 110000,
+        "erc20_receiver_spend": 85000,
+        "erc20_sender_refund": 85000
+    }
+  },
+  {
     "coin": "KCS",
     "name": "kucoin-token",
     "fname": "KuCoin Token",
@@ -8270,7 +8422,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/140'"
+    "derivation_path": "m/84'/140'"
   },
   {
     "coin": "LCC",
@@ -8321,7 +8473,92 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/192'"
+    "derivation_path": "m/84'/192'"
+  },
+  {
+    "coin": "LCN",
+    "name": "lyncoin",
+    "fname": "Lyncoin",
+    "rpcport": 5053,
+    "pubtype": 234,
+    "p2shtype": 55,
+    "wiftype": 126,
+    "segwit": true,
+    "bech32_hrp": "lc",
+    "txfee": 1000,
+    "decimals": 8,
+    "mm2": 1,
+    "wallet_only": true,
+    "sign_message_prefix": "Lyncoin Signed Message:\n",
+    "required_confirmations": 10,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/0'",
+    "trezor_coin": "Lyncoin",
+    "links": {
+      "github": "https://github.com/lyncoin/lyncoin",
+      "homepage": "https://lyncoin.com"
+    }
+  },
+  {
+    "coin": "LCN-segwit",
+    "name": "lyncoin",
+    "fname": "Lyncoin",
+    "sign_message_prefix": "Lyncoin Signed Message:\n",
+    "rpcport": 5053,
+    "pubtype": 234,
+    "p2shtype": 55,
+    "wiftype": 126,
+    "segwit": true,
+    "bech32_hrp": "lc",
+    "address_format": {
+      "format": "segwit"
+    },
+    "orderbook_ticker": "LCN",
+    "txfee": 1000,
+    "decimals": 8,
+    "mm2": 1,
+    "wallet_only": true,
+    "required_confirmations": 10,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/84'/0'",
+    "trezor_coin": "Lyncoin",
+    "links": {
+      "github": "https://github.com/lyncoin/lyncoin",
+      "homepage": "https://lyncoin.com"
+    }
+  },
+  {
+    "coin": "LCN-BEP20",
+    "name": "lcn_bep20",
+    "fname": "Lyncoin",
+    "rpcport": 80,
+    "mm2": 1,
+    "chain_id": 56,
+    "decimals": 8,
+    "avg_blocktime": 3,
+    "required_confirmations": 3,
+    "protocol": {
+      "type": "ERC20",
+      "protocol_data": {
+        "platform": "BNB",
+        "contract_address": "0xD6a540543327B5A4F2223F123640932eE3C6C583"
+      }
+    },
+    "derivation_path": "m/44'/60'",
+    "use_access_list": true,
+    "max_eth_tx_type": 2,
+    "gas_limit": {
+        "eth_send_erc20": 55000,
+        "erc20_payment": 110000,
+        "erc20_receiver_spend": 85000,
+        "erc20_sender_refund": 85000
+    }
   },
   {
     "coin": "LDO-ERC20",
@@ -8821,7 +9058,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/2'",
+    "derivation_path": "m/84'/2'",
     "trezor_coin": "Litecoin",
     "links": {
       "github": "https://github.com/litecoin-project/litecoin",
@@ -9560,7 +9797,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/22'",
+    "derivation_path": "m/84'/22'",
     "trezor_coin": "Monacoin",
     "links": {
       "github": "https://github.com/monacoinproject/monacoin",
@@ -9893,7 +10130,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/7'",
+    "derivation_path": "m/84'/7'",
     "trezor_coin": "Namecoin",
     "links": {
       "github": "https://github.com/namecoin/namecoin-core",
@@ -10427,15 +10664,15 @@
     "coin": "FLOP",
     "name": "flopcoin",
     "fname": "Flopcoin",
-    "sign_message_prefix": "Flopcoin Signed Message:\n",
     "rpcport": 32552,
     "pubtype": 35,
     "p2shtype": 22,
     "wiftype": 158,
-    "txfee": 500000000,
-    "dust": 1000000,
+    "segwit": false,
+    "txfee": 1000000,
     "mm2": 1,
-    "required_confirmations": 2,
+    "sign_message_prefix": "Flopcoin Signed Message:\n",
+    "required_confirmations": 5,
     "avg_blocktime": 60,
     "protocol": {
       "type": "UTXO"
@@ -10456,6 +10693,7 @@
     "wiftype": 158,
     "segwit": false,
     "txfee": 1000000,
+    "dust": 1000000,
     "mm2": 1,
     "sign_message_prefix": "Pepecoin Signed Message:\n",
     "required_confirmations": 5,
@@ -11053,6 +11291,29 @@
     }
   },
   {
+    "coin": "SHIC",
+    "name": "shibacoin",
+    "fname": "Shibacoin",
+    "rpcport": 33863,
+    "pubtype": 63,
+    "p2shtype": 22,
+    "wiftype": 158,
+    "segwit": false,
+    "txfee": 1000000,
+    "mm2": 1,
+    "sign_message_prefix": "Shibacoin Signed Message:\n",
+    "required_confirmations": 5,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/74'",
+    "links": {
+      "github": "https://github.com/shibacoinppc/shibacoin",
+      "homepage": "https://shibapow.org/"
+    }
+  },
+  {
     "coin": "QC-QRC20",
     "name": "qtum",
     "fname": "Qcash",
@@ -11509,7 +11770,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/143'"
+    "derivation_path": "m/84'/143'"
   },
   {
     "coin": "RIC-BEP20",
@@ -12652,7 +12913,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/57'",
+    "derivation_path": "m/84'/57'",
     "trezor_coin": "Syscoin",
     "links": {
       "github": "https://github.com/syscoin/syscoin",
@@ -13361,6 +13622,7 @@
     "p2shtype": 85,
     "wiftype": 153,
     "txfee": 100000,
+    "dust": 100000,
     "segwit": false,
     "mm2": 1,
     "required_confirmations": 4,
@@ -14280,7 +14542,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/14'",
+    "derivation_path": "m/84'/14'",
     "trezor_coin": "Viacoin",
     "links": {
       "github": "https://github.com/viacoin",
@@ -14348,23 +14610,6 @@
     "trezor_coin": "Komodo"
   },
   {
-    "coin": "VPRM",
-    "sign_message_prefix": "Komodo Signed Message:\n",
-    "asset": "VPRM",
-    "fname": "Vaporum",
-    "rpcport": 51609,
-    "txversion": 4,
-    "overwintered": 1,
-    "mm2": 1,
-    "required_confirmations": 5,
-    "avg_blocktime": 30,
-    "protocol": {
-      "type": "UTXO"
-    },
-    "derivation_path": "m/44'/141'",
-    "trezor_coin": "Komodo"
-  },
-  {
     "coin": "VTC",
     "name": "vertcoin",
     "fname": "Vertcoin",
@@ -14414,7 +14659,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/28'",
+    "derivation_path": "m/84'/28'",
     "trezor_coin": "Vertcoin",
     "links": {
       "github": "https://github.com/vertcoin-project/vertcoin-core",
@@ -14726,7 +14971,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/597'"
+    "derivation_path": "m/84'/597'"
   },
   {
     "coin": "XEP-BEP20",
@@ -14862,7 +15107,7 @@
     "protocol": {
       "type": "UTXO"
     },
-    "derivation_path": "m/44'/90'"
+    "derivation_path": "m/84'/90'"
   },
   {
     "coin": "XNA",
@@ -16535,6 +16780,42 @@
     "required_confirmations": 3
   },
   {
+    "coin": "ZDEEX",
+    "asset": "ZDEEX",
+    "fname": "Zdeex",
+    "txversion": 4,
+    "overwintered": 1,
+    "mm2": 1,
+    "avg_blocktime": 300,
+    "protocol": {
+      "type": "ZHTLC",
+      "protocol_data": {
+        "consensus_params": {
+          "overwinter_activation_height": 0,
+          "sapling_activation_height": 1,
+          "blossom_activation_height": null,
+          "heartwood_activation_height": null,
+          "canopy_activation_height": null,
+          "coin_type": 133,
+          "hrp_sapling_extended_spending_key": "secret-extended-key-main",
+          "hrp_sapling_extended_full_viewing_key": "zxviews",
+          "hrp_sapling_payment_address": "zs",
+          "b58_pubkey_address_prefix": [
+            28,
+            184
+          ],
+          "b58_script_address_prefix": [
+            28,
+            189
+          ]
+        },
+        "z_derivation_path": "m/32'/133'"
+      }
+    },
+    "derivation_path": "m/44'/133'",
+    "required_confirmations": 3
+  },
+  {
     "coin": "ZINU-BEP20",
     "name": "zinu_bep20",
     "fname": "Zombie Inu",
@@ -16561,8 +16842,8 @@
     "pubtype": 61,
     "p2shtype": 123,
     "wiftype": 216,
-    "txfee": 5000000,
-    "dust": 400000,
+    "txfee": 40000000,
+    "dust": 72800,
     "mature_confirmations": 120,
     "segwit": true,
     "bech32_hrp": "rc",
@@ -16760,6 +17041,34 @@
     "links": {
       "github": "https://github.com/diabaths/Crionic-Coin",
       "homepage": "https://coin.crionic.org"
+    }
+  },
+  {
+    "coin": "NITO-segwit",
+    "name": "nito",
+    "fname": "NITO",
+    "rpcport": 8825,
+    "pubtype": 0,
+    "p2shtype": 5,
+    "wiftype": 128,
+    "txfee": 10000,
+    "wallet_only": true,
+    "segwit": true,
+    "bech32_hrp": "nito",
+    "address_format": {
+      "format": "segwit"
+    },
+    "orderbook_ticker": "NITO",
+    "mm2": 1,
+    "required_confirmations": 3,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/84'/0'",
+    "links": {
+      "github": "https://github.com/NitoNetwork/",
+      "homepage": "https://nito.network/"
     }
   },
   {
@@ -17084,6 +17393,29 @@
     "trezor_coin": "Polygon",
     "links": {
       "homepage": "https://polygon.technology/"
+    }
+  },
+  {
+    "coin": "BONC",
+    "name": "bonkcoin",
+    "fname": "Bonkcoin",
+    "rpcport": 15612,
+    "pubtype": 25,
+    "p2shtype": 28,
+    "wiftype": 151,
+    "segwit": false,
+    "txfee": 1000000,
+    "mm2": 1,
+    "sign_message_prefix": "Bonkcoin Signed Message:\n",
+    "required_confirmations": 5,
+    "avg_blocktime": 60,
+    "protocol": {
+      "type": "UTXO"
+    },
+    "derivation_path": "m/44'/6363'",
+    "links": {
+      "github": "https://github.com/Bonkcoin/Bonkcoin-core",
+      "homepage": "https://bonkscoin.io"
     }
   }
 ]

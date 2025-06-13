@@ -35,11 +35,11 @@ jobs:
         uses: gradle/gradle-build-action@v2.4.2
       # mm2 lib download
       - run: mkdir -p android/app/src/main/cpp/libs/{armeabi-v7a,arm64-v8a}
-      - run: wget https://sdk.devbuilds.komodo.earth/dev/mm2_73e0650-android-armv7.zip
-      - run: unzip mm2_73e0650-android-armv7.zip
+      - run: wget https://github.com/KomodoPlatform/komodo-defi-framework/releases/download/v2.4.0-beta/mm2-c800ea03f-android-armv7-CI.zip
+      - run: unzip mm2-c800ea03f-android-armv7-CI.zip
       - run: mv libmm2.a android/app/src/main/cpp/libs/armeabi-v7a/
-      - run: wget https://sdk.devbuilds.komodo.earth/dev/mm2_73e0650-android-aarch64.zip
-      - run: unzip mm2_73e0650-android-aarch64.zip
+      - run: wget https://github.com/KomodoPlatform/komodo-defi-framework/releases/download/v2.4.0-beta/mm2-c800ea03f-android-aarch64-CI.zip
+      - run: unzip mm2-c800ea03f-android-aarch64-CI.zip
       - run: mv libmm2.a android/app/src/main/cpp/libs/arm64-v8a/
       # Save API binaries
       - name: Create API binaries directory
